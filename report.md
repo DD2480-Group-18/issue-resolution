@@ -51,9 +51,10 @@ We ended up creating three new issues in total of our own, as we worked with the
 
 Patch changes:
 
-- [Task-hindering/related bug, changes](https://github.com/repobee/repobee/issues/1014/files)
-- [Non-task-hindering bug 1, changes](https://github.com/repobee/repobee/issues/1013/files)
-- [Non-task-hindering bug 2, changes](https://github.com/repobee/repobee/issues/1010/files)
+- [Main task, changes](https://github.com/repobee/repobee/pull/1016/files)
+- [Task-hindering/related bug, changes](https://github.com/repobee/repobee/pull/1017/files)
+- [Non-task-hindering bug 1, changes](https://github.com/repobee/repobee/pull/1018/files)
+- (Non-task-hindering bug 2) was [fixed by the maintainer](https://github.com/repobee/repobee/pull/1011)
 
 #### Requirements
 
