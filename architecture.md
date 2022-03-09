@@ -2,21 +2,21 @@
 
 Objects:
 
-Organization
-Repos
-Teams
-Students
-Issues
-APIs
+- Organization
+- Repos
+- Teams
+- Students
+- Issues
+- APIs
 
 Commands:
 
-Review
-Config
-Issues
+- Review
+- Config
+- Issues
 
 Platform:
 
-Github
-Gitlab
-Something else
+- Github
+- Gitlab
+- Gitea

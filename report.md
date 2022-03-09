@@ -92,6 +92,17 @@ We ended up finding two bugs while fixing our main issue, therefore the final co
 
 The documentation of the changes made are in the issues linked in the PRs. 
 
+#### UML Diagrams
+
+These issues are hard to include the typical class UML diagrams for; firstly because they do not make use of classes, and second because we mostly dabble in already existing code and extend it. The one thing that we found useful to create diagrams for was control flow, as that is relevant to the bugs we found (and created/solved issues) for.
+
+The main issue revealed a bug (see Bugfix 1), which was one layer further down in the control flow of the main issue.
+These issues have therefore been included in the same UML diagram.
+
+##### Control flow of the _main issue_ **and** the lowercase author issue
+
+![main issue and bugfix 1 control flow](/diagram/author-lowercase-diagram.png)
+
 ### Effort spent
 
 Documentation of time spent (not counting time spent working on different project).
@@ -120,35 +131,28 @@ Total time spent: ~21 hours
 
 ### Essence Standard
 
-mostly Performing: The team is mostly working effectively and efficiently
+We are firmly in mostly performing. The team is mostly working effectively and efficiently.
 
-* Consistently meeting commitments: The team consistently meets its commitments.
-* Continuously adapting to change: The team continuously adapts to the changing context.
-* Addresses problems: The team identifies and addresses problems without outside help.
-* Rework and backtracking minimized: Effective progress is being achieved with minimal avoidable backtracking and reworking.
-* Waste continuously eliminated: Wasted work, and the potential for wasted work are continuously eliminated.
+This is our motivation:
+
+* Consistently meeting commitments: The team consistently meets its commitments. Yes, we did meet our commitments, although we did not work every day we should have, which yet again left a lot of work for the last day of the deadline (mostly writing the report).
+* Continuously adapting to change: The team continuously adapts to the changing context. When we picked the issue to work on and notified the maintainer about this, he told us that he was refactoring that exact file and function which we were going to dabble in. We started writing code anyway, and merged our changes and fixed the conflicts, showing that we are adaptable to unforeseen circumstances.
+* Addresses problems: The team identifies and addresses problems without outside help. We addresses **3** bugs within the project and notified the maintainer, and fixed **2** of these, which is why we are confident in saying that we are able to address problems. That is in the actual technical work, however. We did not discuss any team-related problems for this assignment, because there were none.
+* Rework and backtracking minimized: Effective progress is being achieved with minimal avoidable backtracking and reworking. In assignment 2/3, there was some reworking, but in this assignment we managed to cut up the work in chunks that did not affect the other team member, which minimized reworking.
+* Waste continuously eliminated: Wasted work, and the potential for wasted work are continuously eliminated. We have not done any double-work since the first assignment as we make sure it is clear who does what.
 
 Even with our small team, we are very happy with the way we are working. We still need to spread out work more over the entire period, that is not as easily achived because of factors ourside our group and this course.
+We are both in a place where we are fine with this way of working, though, and can count on each other to do the work that is expected. We have definitely improved during the course, especially when it comes to communication and reminding each other of
+when it is time to put down some hours. The next state is "adjourned", which is conveniently the state the team will be in after this assignment. 
 
-### P+
+### P+ tasks fulfilled
 
 - Point 2: Updates are put into context with the overall software architecture
 - Point 3: Relevant test cases (existing tests and updated/new tests related to the refactored code) are traced to requirements
 - Point 4: Patch is clean (see [Clean patch](#clean-patch))
 - Point 5: Patches/PRs are considered for acceptance
 - Point 7: We have found **three** new moderately critical issues, of which we fixed **two**, and the maintainer fixed the last one.
-
-#### Requirements tracability matrix
-
-|  ID   |                  Title                   |                                                                              Description                                                                               |
-| :---: | :--------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|   1   |       Multiple issues per reviewer       |                                                         Create multiple issues for each assigned peer-reviewer                                                         |
-|   2   |  Remove old behavior for issue reviews   |                                            Remove behavior that create a single peer-reviewing-issue for all peer-reviewers                                            |
-|   3   |     Assign peer-reviewers to issues      |                                               Map and assign only one peer-reviewer to each created peer-reviewing issue                                               |
-|   4   |        Change issue naming scheme        |                               Change the issue review assignment naming scheme to include the name of the assigned reviewer in the title                               |
-|   5   |    Make issue author names lowercase     | For consistency throughout the project (and correct comparison when issues have authors with names like ZinoKader), make author names in the Issue dataclass lowercase |
-|   6   | Handle empty issue body without crashing |                                   When analyzing issues with the `--show-body` flag, do not crash if the body of the issue is empty                                    |
-
+  
 #### Updates in source put into context with architecture / design patterns
 
 The classes and modules of the project are well designed and seems to follow the principles of *closed for modification open for extension* well, especially for the tests. This means that we were able to extend the classes and functions used for testing without adding unnessessary complexity.
@@ -159,7 +163,12 @@ By splitting a large function into smaller ones, new complexities can be introdu
 
 #### Relevant test cases and tracing to requirements
 
-Both the main issue and bug fixes have their own respective test case that tests the main criterias. 
+Both the main issue and bug fixes have their own respective test case that tests the main criterias.
+
+The test logs before and after can be found in the `test-logs` folder in this repository.
+The repository has [92% code coverage](https://app.codecov.io/gh/repobee/repobee), although the new tests have not been accounted for yet as they have not been merged into master yet.
+
+By interpolating from what we have done, we can only theorize but are pretty sure that the code coverage will either increase or stay the same with our changes. We changed one behavior without adding much new code, and added another test for that (which increases coverage). We then resolved an unrelated issue, also by adding a smaller amount of code and adding one test for it.
 
 ##### Requirement 1, 3 and 4
 
@@ -207,3 +216,13 @@ Also, since the abstraction layer between any platform's API and the logic was w
 ##### Limitations
 
 Since this is mainly a KTH project, we have little access to testers (stakeholders) that assures the quality of our software on platforms not normally used by KTH (like Github Free / CE, more. ). If there are more people from other schools usign this tech, there will be more people to validate that our fix not only solves the problem, but also still fits the requirements of the stakeholders. 
+
+### Overall experience
+
+Our experience working with this repository has only been positive. The code already present is very well-written and easy to understand. Even though the project is written in Python, it has type hints and does not fall into a typical pattern with Python where code is "smarter" and shorter than it needs to be just for the sake of being short.
+
+The maintainer has been very active in assigning us to issues when we request it, and has been providing us with very useful information to quickly get started with working on the issues.
+
+The documentation in the README and on the hosted docs are also great on their own, and would have been sufficient onboarding without the extra luxuries mentioned above.
+
+The main takeaway from this project is undoubtedly how the "onboarding experience" or how "welcoming" the repository/project is to work on makes a big impact on how likely it is for outsider to work on it. We evaluated some other projects before landing on this one because the maintainer seemed like a helpful person. Another takeaway which we noticed during the writing of this report is how little time actually goes into writing code. Most time appears to go to evaulating strategies, planning and reading documentation.

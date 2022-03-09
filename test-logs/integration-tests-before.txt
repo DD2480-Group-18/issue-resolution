@@ -1,0 +1,18 @@
+====================================================== test session starts =======================================================
+platform darwin -- Python 3.9.10, pytest-7.0.1, pluggy-1.0.0
+rootdir: /Users/zinokader/Documents/Skoldokument/Datalogi/SoftwareFundamentals/repobee/tests, configfile: pytest.ini
+plugins: mock-3.7.0, cov-3.0.0, repobee-3.8.0.dev0
+collected 111 items
+
+tests/new_integration_tests/test_config_category.py ..........                                                             [  8%]
+tests/new_integration_tests/test_dist.py ...s.........................                                                     [ 34%]
+tests/new_integration_tests/test_issues.py ......                                                                          [ 40%]
+tests/new_integration_tests/test_localapi.py ....                                                                          [ 43%]
+tests/new_integration_tests/test_log.py ..                                                                                 [ 45%]
+tests/new_integration_tests/test_plugins.py .........                                                                      [ 53%]
+tests/new_integration_tests/test_repos.py ......................................                                           [ 87%]
+tests/new_integration_tests/test_reviews.py ........                                                                       [ 94%]
+tests/new_integration_tests/test_tamanager.py ...                                                                          [ 97%]
+tests/new_integration_tests/test_teams.py ...                                                                              [100%]
+
+=========================================== 110 passed, 1 skipped in 230.24s (0:03:50) ===========================================

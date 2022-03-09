@@ -1,0 +1,32 @@
+====================================================== test session starts =======================================================
+platform darwin -- Python 3.9.10, pytest-7.0.1, pluggy-1.0.0
+rootdir: /Users/zinokader/Documents/Skoldokument/Datalogi/SoftwareFundamentals/repobee/tests, configfile: pytest.ini
+plugins: mock-3.7.0, cov-3.0.0, repobee-3.8.0.dev0
+collected 335 items
+
+tests/unit_tests/repobee/test_cli.py ..................................................................................... [ 25%]
+.................                                                                                                          [ 30%]
+tests/unit_tests/repobee/test_config.py .......                                                                            [ 32%]
+tests/unit_tests/repobee/test_exception.py .....                                                                           [ 34%]
+tests/unit_tests/repobee/test_fileutil.py ...........                                                                      [ 37%]
+tests/unit_tests/repobee/test_formatters.py .....                                                                          [ 38%]
+tests/unit_tests/repobee/test_git.py ..............                                                                        [ 42%]
+tests/unit_tests/repobee/test_http.py ..........                                                                           [ 45%]
+tests/unit_tests/repobee/test_main.py ..................                                                                   [ 51%]
+tests/unit_tests/repobee/test_plugin.py ...................                                                                [ 57%]
+tests/unit_tests/repobee/test_urlutil.py ....                                                                              [ 58%]
+tests/unit_tests/repobee/plugin_tests/test_configwizard.py .....                                                           [ 59%]
+tests/unit_tests/repobee/plugin_tests/test_genreviews.py .........                                                         [ 62%]
+tests/unit_tests/repobee/plugin_tests/test_gitea.py .                                                                      [ 62%]
+tests/unit_tests/repobee/plugin_tests/test_github.py ..........................                                            [ 70%]
+tests/unit_tests/repobee/plugin_tests/test_gitlab.py .................                                                     [ 75%]
+tests/unit_tests/repobee/plugin_tests/test_pairwise.py ....................                                                [ 81%]
+tests/unit_tests/repobee/plugin_tests/test_studentsyml.py ..                                                               [ 82%]
+tests/unit_tests/repobee_plug/test_deprecation.py .                                                                        [ 82%]
+tests/unit_tests/repobee_plug/test_localreps.py .                                                                          [ 82%]
+tests/unit_tests/repobee_plug/test_platform.py ...........................                                                 [ 90%]
+tests/unit_tests/repobee_plug/test_plug_config.py .....                                                                    [ 92%]
+tests/unit_tests/repobee_plug/test_pluginmeta.py .......................                                                   [ 99%]
+tests/unit_tests/repobee_plug/test_serialize.py ...                                                                        [100%]
+
+====================================================== 335 passed in 4.91s =======================================================
